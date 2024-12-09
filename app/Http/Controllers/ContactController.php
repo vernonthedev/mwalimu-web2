@@ -59,7 +59,11 @@ class ContactController extends Controller
      */
     public function show(Contact $contact)
     {
-        return view('pages.web_master.contacts');
+          // Fetch all contacts
+        $contacts = Contact::paginate(20);
+
+        // Pass data to the view
+        return view('pages.web_master.contacts', compact('contacts'));
     }
 
     /**
