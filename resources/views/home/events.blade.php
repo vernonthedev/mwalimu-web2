@@ -22,75 +22,38 @@
             </div>
         </div>
     </div><!--==============================
-    Classes Area
+    Events Area
     ==============================-->
-    <section class=" space-top space-extra-bottom">
+    <section class="space-top space-extra-bottom">
         <div class="container">
-            
-        <div class="row justify-content-center">
-                
-            <div class="col-sm-6 col-lg-4 col-xl-3">
-                    <div class="class-style2">
-                        <h3 class="class-title h5"><a class="text-inherit" href="#">School Graduation</a></h3>
-                        <div class="class-img">
-                            <div class="img"><a href="#"><img src="https://fakeimg.pl/230x230"
-                                        alt="class"></a></div>
-                            <span class="class-number">01</span>
+            <div class="row justify-content-center">
+                @foreach($events as $event)
+                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                        <div class="event-style2">
+                            <h3 class="event-title h5"><a class="text-inherit" href="#">{{ $event->name }}</a></h3>
+                            <div class="event-img">
+                                <div class="img">
+                                    <a href="#">
+                                        <!-- Display event image -->
+                                        <img src="{{ asset('storage/' . $event->image) }}" alt="{{ $event->name }}">
+                                    </a>
+                                </div>
+                                <span class="event-number">{{ $loop->iteration }}</span>
+                            </div>
+                            <p class="event-info">Date: <span class="info">{{ \Carbon\Carbon::parse($event->date)->format('d M, Y') }}</span></p>
+                            <p class="event-details">{{ $event->details }}</p>
                         </div>
-                        <p class="class-info">Date: <span class="info">12th Dec, 2024</span></p>
                     </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
-                <div class="class-style2">
-                        <h3 class="class-title h5"><a class="text-inherit" href="#">School Graduation</a></h3>
-                        <div class="class-img">
-                            <div class="img"><a href="#"><img src="https://fakeimg.pl/230x230"
-                                        alt="class"></a></div>
-                            <span class="class-number">01</span>
-                        </div>
-                        <p class="class-info">Date: <span class="info">12th Dec, 2024</span></p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
-                <div class="class-style2">
-                        <h3 class="class-title h5"><a class="text-inherit" href="#">School Graduation</a></h3>
-                        <div class="class-img">
-                            <div class="img"><a href="#"><img src="https://fakeimg.pl/230x230"
-                                        alt="class"></a></div>
-                            <span class="class-number">01</span>
-                        </div>
-                        <p class="class-info">Date: <span class="info">12th Dec, 2024</span></p>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4 col-xl-3">
-                <div class="class-style2">
-                        <h3 class="class-title h5"><a class="text-inherit" href="#">School Graduation</a></h3>
-                        <div class="class-img">
-                            <div class="img"><a href="#"><img src="https://fakeimg.pl/230x230"
-                                        alt="class"></a></div>
-                            <span class="class-number">01</span>
-                        </div>
-                        <p class="class-info">Date: <span class="info">12th Dec, 2024</span></p>
-                    </div>
-                </div>
-
+                @endforeach
             </div>
-
+    
+            <!-- Pagination -->
             <div class="text-center">
                 <div class="vs-pagination pt-md-3">
-                    <a href="#" class="pagi-btn">Prev</a>
-                    <ul>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">...</a></li>
-                        <li><a href="#">12</a></li>
-                    </ul>
-                    <a href="#" class="pagi-btn">next</a>
+                    {{ $events->links() }}  <!-- Pagination links -->
                 </div>
             </div>
         </div>
     </section>
-    
 
 @endsection

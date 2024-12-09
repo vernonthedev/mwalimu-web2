@@ -78,6 +78,16 @@
                     @if($event->image)
                         <img src="{{ asset('storage/' . $event->image) }}" alt="{{ $event->name }}" style="max-width: 100%; height: auto;">
                     @endif
+                    <br>
+                    {{-- edit the event --}}
+                    <button><a href="{{ route('events.edit', $event->id) }}" class="btn btn-warning">Edit</a></button>
+                    {{-- delete an event --}}
+                    <form action="{{ route('events.destroy', $event->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this event?');">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                    
                 </div>
             @endforeach
 

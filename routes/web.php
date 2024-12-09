@@ -9,7 +9,7 @@ Route::get('/', 'HomeController@index')->name('home.index');
 Route::get('about-us',function (){ return view('home.about');})->name('about');
 Route::get('contact-us',function (){ return view('home.contact');})->name('contact');
 Route::post('contact-us',[ContactController::class, 'store'])->name('contact.store');
-Route::get('events',function (){ return view('home.events');})->name('events');
+Route::get('events',[EventController::class, 'showEvents'])->name('events');
 Route::get('events/{id}', [EventController::class, 'show'])->name('events.show');
 Route::get('blog',function (){ return view('home.blog');})->name('blog');
 Route::get('board-members',function (){ return view('home.board');})->name('board');
@@ -29,6 +29,9 @@ Route::group(['middleware' => 'auth', 'prefix'=> 'admin'], function () {
     Route::get('/blog-management', 'ContactController@show')->name('contacts.show');
     Route::get('/event-management', [EventController::class, 'index'])->name('events.index');
     Route::post('/event-management', [EventController::class, 'store'])->name('events.store');
+    Route::get('/event-management/{event}/edit', [EventController::class, 'edit'])->name('events.edit');
+    Route::put('/event-management/{event}', [EventController::class, 'update'])->name('events.update');
+    Route::delete('/event-management/{event}', [EventController::class, 'destroy'])->name('events.destroy');
     Route::get('/about-management', 'ContactController@show')->name('contacts.show');
 
 
