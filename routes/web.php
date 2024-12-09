@@ -16,15 +16,17 @@ Route::get('/privacy-policy', 'HomeController@privacy_policy')->name('privacy_po
 Route::get('/terms-of-use', 'HomeController@terms_of_use')->name('terms_of_use');
 
 //The Admin Routes  
-Route::group(['middleware' => 'auth'], function () {
+Route::group(['middleware' => 'auth', 'prefix'=> 'admin'], function () {
 
     Route::get('/home', 'HomeController@dashboard')->name('home');
     Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
 
     // Manage Website Content
-    Route::get('/website', 'HomeController@dashboard')->name('website');
-    Route::get('/contacts', 'HomeController@dashboard')->name('admin.contacts');
+    Route::get('/contacts', 'ContactController@show')->name('contacts.show');
 
+
+
+    // Account Profiles
     Route::group(['prefix' => 'my_account'], function() {
         Route::get('/', 'MyAccountController@edit_profile')->name('my_account');
         Route::put('/', 'MyAccountController@update_profile')->name('my_account.update');

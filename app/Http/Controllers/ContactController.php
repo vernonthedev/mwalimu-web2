@@ -59,7 +59,7 @@ class ContactController extends Controller
      */
     public function show(Contact $contact)
     {
-        //
+        return view('pages.web_master.contacts');
     }
 
     /**
