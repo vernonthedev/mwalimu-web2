@@ -57,11 +57,11 @@
 
                     <ul class="nav nav-group-sub" data-submenu-title="Manage Academics">
 
-                        <li class="nav-item"><a href="{{ route('tt.index') }}" class="nav-link {{ in_array(Route::currentRouteName(), ['tt.index']) ? 'active' : '' }}">Gallery</a></li>
+                        <li class="nav-item"><a href="{{ route('tt.index') }}" class="nav-link {{ in_array(Route::currentRouteName(), ['tt.index']) ? 'active' : '' }}">Manage Gallery</a></li>
 
-                        <li class="nav-item"><a href="{{ route('tt.index') }}" class="nav-link {{ in_array(Route::currentRouteName(), ['tt.index']) ? 'active' : '' }}">Blogs</a></li>
+                        <li class="nav-item"><a href="{{ route('blog.index') }}" class="nav-link {{ in_array(Route::currentRouteName(), ['blog.index']) ? 'active' : '' }}">Manage Blogs</a></li>
 
-                        <li class="nav-item"><a href="{{ route('events.index') }}" class="nav-link {{ in_array(Route::currentRouteName(), ['events.index']) ? 'active' : '' }}">Events</a></li>
+                        <li class="nav-item"><a href="{{ route('events.index') }}" class="nav-link {{ in_array(Route::currentRouteName(), ['events.index']) ? 'active' : '' }}">Manage Events</a></li>
 
                         <li class="nav-item"><a href="{{ route('contacts.show') }}" class="nav-link {{ in_array(Route::currentRouteName(), ['contacts.show']) ? 'active' : '' }}">Contacts</a></li>
 

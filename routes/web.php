@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\EventController;
 
@@ -25,13 +26,21 @@ Route::group(['middleware' => 'auth', 'prefix'=> 'admin'], function () {
 
     // Manage Website Content
     Route::get('/contact-management', 'ContactController@show')->name('contacts.show');
+
     Route::get('/gallery-management', 'ContactController@show')->name('contacts.show');
-    Route::get('/blog-management', 'ContactController@show')->name('contacts.show');
+
+    Route::get('/blog-management', [BlogController::class, 'index'])->name('blog.index');
+    Route::post('/blog-management', [BlogController::class, 'store'])->name('blogs.store');
+    Route::get('/blog-management/{blog}/edit', [BlogController::class, 'edit'])->name('blogs.edit');
+    Route::put('/blog-management/{blog}', [BlogController::class, 'update'])->name('blogs.update');
+    Route::delete('/blog-management/{blog}', [BlogController::class, 'destroy'])->name('blogs.destroy');
+
     Route::get('/event-management', [EventController::class, 'index'])->name('events.index');
     Route::post('/event-management', [EventController::class, 'store'])->name('events.store');
     Route::get('/event-management/{event}/edit', [EventController::class, 'edit'])->name('events.edit');
     Route::put('/event-management/{event}', [EventController::class, 'update'])->name('events.update');
     Route::delete('/event-management/{event}', [EventController::class, 'destroy'])->name('events.destroy');
+
     Route::get('/about-management', 'ContactController@show')->name('contacts.show');
 
 
