@@ -9,11 +9,11 @@
     <!--==============================
     Breadcumb
 ============================== -->
-<div class="breadcumb-wrapper " data-bg-src="https://fakeimg.pl/1200x600">
+<div class="breadcumb-wrapper " data-bg-src="{{ asset('assets/images/mwalimuImage-no.10.JPG')}}">
         <div class="container z-index-common">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">About Us</h1>
-                <p class="breadcumb-text">Montessori Is A Nurturing And Holistic Approach To Learning</p>
+                <p class="breadcumb-text text-white">Montessori Is A Nurturing And Holistic Approach To Learning</p>
                 <div class="breadcumb-menu-wrap">
                     <ul class="breadcumb-menu">
                         <li><a href="{{ route('home.index')}}">Home</a></li>
@@ -30,7 +30,7 @@
             <div class="row align-items-center justify-content-between flex-row-reverse">
                 <div class="col-lg-6 col-xl-auto text-center text-lg-end">
                     <div class="img-box2">
-                        <div class="transform-banner"><img src="https://fakeimg.pl/618x618" alt="about"></div>
+                        <div class="transform-banner"><img src="{{ asset('assets/images/mwalimuImage-no.7.JPG')}}" width="600px" alt="about"></div>
                         <div class="vs-circle jump"></div>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
             <div class="row gx-70">
                 <div class="col-lg-6 text-center text-lg-end">
                     <div class="img-box2 style2">
-                        <div class="transform-banner"><img src="https://fakeimg.pl/610x610" alt="about"></div>
+                        <div class="transform-banner"><img src="{{ asset('assets/images/mwalimuImage-no.1.jpg')}}" alt="about" width="610px"></div>
                         <div class="vs-circle jump"></div>
                     </div>
                 </div>
@@ -113,7 +113,7 @@
                 <div class="col-lg-6">
                     <div class="team-style1">
                         <div class="team-img">
-                            <a href="#"><img src="https://fakeimg.pl/300x310" alt="team"></a>
+                            <a href="#"><img src="assets/img/mwalimu.png" alt="team"></a>
                         </div>
                         <div class="team-content">
                             <h3 class="team-name h2"><a href="#" class="text-inherit">Katie Willmore</a>
@@ -129,14 +129,14 @@
                 </div>
                 <div class="col-sm-6 col-lg-3">
                     <div class="team-style2">
-                        <div class="team-img"><a href="#"><img src="https://fakeimg.pl/300x310"
+                        <div class="team-img"><a href="#"><img src="assets/img/mwalimu.png"
                                     alt="team"></a></div>
                         <h3 class="team-name"><a class="text-inherit" href="#">Jessica Levis</a></h3>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3">
                     <div class="team-style2">
-                        <div class="team-img"><a href="#"><img src="https://fakeimg.pl/300x310"
+                        <div class="team-img"><a href="#"><img src="assets/img/mwalimu.png"
                                     alt="team"></a></div>
                         <h3 class="team-name"><a class="text-inherit" href="#">Nomina Leione</a></h3>
                     </div>
@@ -172,7 +172,7 @@
                         <h3 class="feature-title h5"> Founding of the School</h3>
                         <p class="feature-text">Mwalimu Junior School was established in 2010 with a mission to provide quality education to young learners in a nurturing and stimulating environment. Starting with just two classrooms, the school quickly became a beacon of hope for education in the community.</p>
                         <div class="feature-img">
-                            <a href="#"><img src="https://fakeimg.pl/300x150" alt="feature"></a>
+                            <a href="#"><img src="{{ asset('assets/img/mwalimu.png')}}" alt="feature"></a>
                         </div>
                     </div>
                 </div>
@@ -182,7 +182,7 @@
                         <h3 class="feature-title h5">Expansion and Growth</h3>
                         <p class="feature-text">By 2015, Mwalimu Junior School had expanded significantly, adding new classrooms, a library, and a computer lab. This growth allowed the school to accommodate more students and introduce innovative teaching methods, solidifying its reputation as a leading educational institution</p>
                         <div class="feature-img">
-                            <a href="#"><img src="https://fakeimg.pl/300x150" alt="feature"></a>
+                            <a href="#"><img src="{{ asset('assets/img/mwalimu.png')}}" alt="feature"></a>
                         </div>
                     </div>
                 </div>
@@ -192,7 +192,7 @@
                         <h3 class="feature-title h5">Introduction of Extracurricular Programs</h3>
                         <p class="feature-text">In 2018, the school introduced a variety of extracurricular programs, including sports, music, and drama. These programs aimed to provide holistic development for students, fostering creativity and teamwork beyond the classroom</p>
                         <div class="feature-img">
-                            <a href="#"><img src="https://fakeimg.pl/300x150" alt="feature"></a>
+                            <a href="#"><img src="{{ asset('assets/img/mwalimu.png')}}" alt="feature"></a>
                         </div>
                     </div>
                 </div>
@@ -202,7 +202,7 @@
                         <h3 class="feature-title h5">Digital Transformation and Modern Facilities</h3>
                         <p class="feature-text">In 2023, Mwalimu Junior School embraced digital learning by integrating smart classrooms and online resources. With state-of-the-art facilities and a forward-thinking curriculum, the school continues to empower learners for the future</p>
                         <div class="feature-img">
-                            <a href="#"><img src="https://fakeimg.pl/300x150" alt="feature"></a>
+                            <a href="#"><img src="{{ asset('assets/img/mwalimu.png')}}" alt="feature"></a>
                         </div>
                     </div>
                 </div>
@@ -226,30 +226,26 @@
                 <div class="col-md-6 col-xl-auto order-2 order-xl-1">
                     <div class="feature-style3">
                         <div class="feature-img">
-                            <div class="img"><img src="https://fakeimg.pl/120x120" alt="feature"></div>
+                            <div class="img"><img src="{{ asset('assets/images/pathfinder.png')}}" alt="feature"></div>
                         </div>
                         <div class="feature-body">
-                            <h3 class="feature-title h4">Early Club</h3>
+                            <h3 class="feature-title h4">Pathfinder Club</h3>
                             <div class="list-style2">
                                 <ul class="list-unstyled">
-                                    <li>Help parents get to work on time</li>
-                                    <li>Near the station</li>
-                                    <li>Children settled and ready to work</li>
+                                    <li>Pathfinder &amp; Adventurer Club</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="feature-style3">
                         <div class="feature-img">
-                            <div class="img"><img src="https://fakeimg.pl/120x120" alt="feature"></div>
+                            <div class="img"><img src="{{ asset('assets/img/mwalimu.png')}}" alt="feature"></div>
                         </div>
                         <div class="feature-body">
-                            <h3 class="feature-title h4">Lunch Club</h3>
+                            <h3 class="feature-title h4">Drama Club</h3>
                             <div class="list-style2">
                                 <ul class="list-unstyled">
-                                    <li>Help parents get to work on time</li>
-                                    <li>Near the station</li>
-                                    <li>Children settled and ready to work</li>
+                                    <li>Music, Dance and Drama Club</li>
                                 </ul>
                             </div>
                         </div>
@@ -257,36 +253,33 @@
 
                 </div>
                 <div class="col-xl-auto order-1 order-xl-2">
-                    <img src="https://fakeimg.pl/382x442" alt="feature" class="w-100">
+                    {{-- <img src="https://fakeimg.pl/382x442" alt="feature" class="w-100"> --}}
+                    <img src="{{ asset('assets/img/mwalimu.png')}}" alt="feature" width="382px">
                 </div>
                 <div class="col-md-6 col-xl-auto  order-3 order-xl-3">
                     <div class="feature-style3">
                         <div class="feature-img">
-                            <div class="img"><img src="https://fakeimg.pl/120x120" alt="feature"></div>
+                            <div class="img"><img src="{{ asset('assets/img/mwalimu.png')}}" alt="feature"></div>
                         </div>
                         <div class="feature-body">
-                            <h3 class="feature-title h4">Afternoon Club</h3>
+                            <h3 class="feature-title h4">Home Management </h3>
                             <div class="list-style2">
                                 <ul class="list-unstyled">
-                                    <li>Help parents get to work on time</li>
-                                    <li>Near the station</li>
-                                    <li>Children settled and ready to work</li>
+                                    <li>Home management Club</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="feature-style3">
                         <div class="feature-img">
-                            <div class="img"><img src="https://fakeimg.pl/120x120" alt="feature"></div>
+                            <div class="img"><img src="{{ asset('assets/img/mwalimu.png')}}" alt="feature"></div>
                         </div>
                         <div class="feature-body">
-                            <h3 class="feature-title h4">Music Club</h3>
+                            <h3 class="feature-title h4">Mwalimu Sports Club</h3>
                             <div class="list-style2">
                                 <ul class="list-unstyled">
-                                    <li>Help parents get to work on time</li>
-                                    <li>Near the station</li>
-                                    <li>Children settled and ready to work</li>
-                                </ul>
+                                    <li>Mwalimu Sports Club</li>
+                                                               </ul>
                             </div>
                         </div>
                     </div>
@@ -360,7 +353,7 @@
                     <div class="feature-style2">
                         <div class="feature-img">
                             <div class="vs-circle"></div>
-                            <img src="https://fakeimg.pl/235x214" alt="image">
+                            <img src="{{ asset('assets/images/mwalimuImage-no.3.jpg')}}" alt="image" width="80%">
                         </div>
                         <h3 class="feature-title h5"><a href="#" class="text-inherit">Respect</a></h3>
                         <p class="feature-text">We believe in creating a safe, secure learning environment where
@@ -372,7 +365,7 @@ respect, honesty, and appreciation of individual differences are fostered.
                     <div class="feature-style2">
                         <div class="feature-img">
                             <div class="vs-circle"></div>
-                            <img src="https://fakeimg.pl/235x214" alt="image">
+                            <img src="{{ asset('assets/images/mwalimuImage-no.4.jpg')}}" alt="image" width="80%">
                         </div>
                         <h3 class="feature-title h5"><a href="#" class="text-inherit">Collaboration</a></h3>
                         <p class="feature-text">We believe cultivating and maintaining partnerships is
@@ -384,7 +377,7 @@ essential.
                     <div class="feature-style2">
                         <div class="feature-img">
                             <div class="vs-circle"></div>
-                            <img src="https://fakeimg.pl/235x214" alt="image">
+                            <img src="{{ asset('assets/images/mwalimuImage-no.3.jpg')}}" alt="image" width="80%">
                         </div>
                         <h3 class="feature-title h5"><a href="#" class="text-inherit">High expectations</a></h3>
                         <p class="feature-text"> We believe maintaining rigorous standards and high
@@ -397,7 +390,7 @@ learning.
                     <div class="feature-style2">
                         <div class="feature-img">
                             <div class="vs-circle"></div>
-                            <img src="https://fakeimg.pl/235x214" alt="image">
+                            <img src="{{ asset('assets/images/mwalimuImage-no.4.jpg')}}" alt="image" width="80%">
                         </div>
                         <h3 class="feature-title h5"><a href="#" class="text-inherit">Responsibility</a></h3>
                         <p class="feature-text">We believe that motivating students to become independent learners leads to taking responsibility for their own learning..</p>
@@ -427,8 +420,8 @@ learning.
                 <div class="col-sm-6 col-lg-4 col-xl-3 filter-item">
                     <div class="gallery-style1">
                         <div class="gallery-img">
-                            <img src="https://fakeimg.pl/296x549" alt="gallery">
-                            <a href="https://fakeimg.pl/296x549" class="gallery-btn popup-image"><i
+                            <img src="{{asset('assets/images/mwalimuImage-no.3.jpg')}}" alt="gallery">
+                            <a href="{{asset('assets/images/mwalimuImage-no.3.jpg')}}" class="gallery-btn popup-image"><i
                                     class="far fa-plus"></i></a>
                         </div>
                     </div>
@@ -436,8 +429,8 @@ learning.
                 <div class="col-sm-6 col-lg-4 col-xl-3 filter-item">
                     <div class="gallery-style1 radius-2">
                         <div class="gallery-img">
-                            <img src="https://fakeimg.pl/296x258" alt="gallery">
-                            <a href="https://fakeimg.pl/296x258" class="gallery-btn popup-image"><i
+                            <img src="{{asset('assets/images/mwalimuImage-no.22.jpg')}}" alt="gallery">
+                            <a href="{{asset('assets/images/mwalimuImage-no.22.jpg')}}" class="gallery-btn popup-image"><i
                                     class="far fa-plus"></i></a>
                         </div>
                     </div>
@@ -445,8 +438,8 @@ learning.
                 <div class="col-sm-6 col-lg-4 col-xl-3 filter-item">
                     <div class="gallery-style1">
                         <div class="gallery-img">
-                            <img src="https://fakeimg.pl/296x549" alt="gallery">
-                            <a href="https://fakeimg.pl/296x549" class="gallery-btn popup-image"><i
+                            <img src="{{asset('assets/images/mwalimuImage-no.22.jpg')}}" alt="gallery">
+                            <a href="{{asset('assets/images/mwalimuImage-no.22.jpg')}}" class="gallery-btn popup-image"><i
                                     class="far fa-plus"></i></a>
                         </div>
                     </div>
@@ -454,8 +447,8 @@ learning.
                 <div class="col-sm-6 col-lg-4 col-xl-3 filter-item">
                     <div class="gallery-style1">
                         <div class="gallery-img">
-                            <img src="https://fakeimg.pl/296x549" alt="gallery">
-                            <a href="https://fakeimg.pl/296x549" class="gallery-btn popup-image"><i
+                            <img src="{{asset('assets/images/mwalimuImage-no.22.jpg')}}" alt="gallery">
+                            <a href="{{asset('assets/images/mwalimuImage-no.22.jpg')}}" class="gallery-btn popup-image"><i
                                     class="far fa-plus"></i></a>
                         </div>
                     </div>
@@ -463,8 +456,8 @@ learning.
                 <div class="col-sm-6 col-lg-4 col-xl-3 filter-item radius-3">
                     <div class="gallery-style1">
                         <div class="gallery-img">
-                            <img src="https://fakeimg.pl/296x258" alt="gallery">
-                            <a href="https://fakeimg.pl/296x258" class="gallery-btn popup-image"><i
+                            <img src="{{asset('assets/images/mwalimuImage-no.11.JPG')}}" alt="gallery">
+                            <a href="{{asset('assets/images/mwalimuImage-no.11.JPG')}}" class="gallery-btn popup-image"><i
                                     class="far fa-plus"></i></a>
                         </div>
                     </div>
@@ -550,8 +543,8 @@ learning.
                 <div class="col-auto">
                     <div class="gallery-style1">
                         <div class="gallery-img">
-                            <img src="https://fakeimg.pl/190x190" alt="gallery">
-                            <a href="https://fakeimg.pl/190x190" class="gallery-btn popup-image"><i
+                            <img src="{{asset('assets/img/mwalimu.png')}}" alt="gallery">
+                            <a href="{{asset('assets/img/mwalimu.png')}}" class="gallery-btn popup-image"><i
                                     class="far fa-plus"></i></a>
                         </div>
                     </div>
@@ -559,8 +552,8 @@ learning.
                 <div class="col-auto">
                     <div class="gallery-style1">
                         <div class="gallery-img">
-                            <img src="https://fakeimg.pl/190x190" alt="gallery">
-                            <a href="https://fakeimg.pl/190x190" class="gallery-btn popup-image"><i
+                            <img src="{{asset('assets/img/mwalimu.png')}}" alt="gallery">
+                            <a href="{{asset('assets/img/mwalimu.png')}}" class="gallery-btn popup-image"><i
                                     class="far fa-plus"></i></a>
                         </div>
                     </div>
@@ -568,8 +561,8 @@ learning.
                 <div class="col-auto">
                     <div class="gallery-style1">
                         <div class="gallery-img">
-                            <img src="https://fakeimg.pl/190x190" alt="gallery">
-                            <a href="https://fakeimg.pl/190x190" class="gallery-btn popup-image"><i
+                            <img src="{{asset('assets/img/mwalimu.png')}}" alt="gallery">
+                            <a href="{{asset('assets/img/mwalimu.png')}}" class="gallery-btn popup-image"><i
                                     class="far fa-plus"></i></a>
                         </div>
                     </div>
@@ -577,8 +570,8 @@ learning.
                 <div class="col-auto">
                     <div class="gallery-style1">
                         <div class="gallery-img">
-                            <img src="https://fakeimg.pl/190x190" alt="gallery">
-                            <a href="https://fakeimg.pl/190x190" class="gallery-btn popup-image"><i
+                            <img src="{{asset('assets/img/mwalimu.png')}}" alt="gallery">
+                            <a href="{{asset('assets/img/mwalimu.png')}}" class="gallery-btn popup-image"><i
                                     class="far fa-plus"></i></a>
                         </div>
                     </div>
@@ -586,8 +579,8 @@ learning.
                 <div class="col-auto">
                     <div class="gallery-style1">
                         <div class="gallery-img">
-                            <img src="https://fakeimg.pl/190x190" alt="gallery">
-                            <a href="https://fakeimg.pl/190x190" class="gallery-btn popup-image"><i
+                            <img src="{{asset('assets/img/mwalimu.png')}}" alt="gallery">
+                            <a href="{{asset('assets/img/mwalimu.png')}}" class="gallery-btn popup-image"><i
                                     class="far fa-plus"></i></a>
                         </div>
                     </div>
@@ -595,8 +588,8 @@ learning.
                 <div class="col-auto">
                     <div class="gallery-style1">
                         <div class="gallery-img">
-                            <img src="https://fakeimg.pl/190x190" alt="gallery">
-                            <a href="https://fakeimg.pl/190x190" class="gallery-btn popup-image"><i
+                            <img src="{{asset('assets/img/mwalimu.png')}}" alt="gallery">
+                            <a href="{{asset('assets/img/mwalimu.png')}}" class="gallery-btn popup-image"><i
                                     class="far fa-plus"></i></a>
                         </div>
                     </div>
@@ -604,8 +597,8 @@ learning.
                 <div class="col-auto">
                     <div class="gallery-style1">
                         <div class="gallery-img">
-                            <img src="https://fakeimg.pl/190x190" alt="gallery">
-                            <a href="https://fakeimg.pl/190x190" class="gallery-btn popup-image"><i
+                            <img src="{{asset('assets/img/mwalimu.png')}}" alt="gallery">
+                            <a href="{{asset('assets/img/mwalimu.png')}}" class="gallery-btn popup-image"><i
                                     class="far fa-plus"></i></a>
                         </div>
                     </div>
