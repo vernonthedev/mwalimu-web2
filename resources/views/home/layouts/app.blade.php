@@ -308,18 +308,18 @@
                                 <p class="map-link"><img src="{{ asset('assets/img/icon/map.svg')}}" alt="svg">Mityana- Kunywa 4km off Mityana road. Next to the district head quarters</p>
                                 <div class="sidebar-gallery">
                                     <div class="gallery-thumb">
-                                        <img src="https://fakeimg.pl/600x400" alt="Gallery Image" class="w-100">
-                                        <a href="https://fakeimg.pl/600x400" class="popup-image gal-btn"><i
+                                        <img src="{{ asset('assets/images/mwalimuImage-no.8.jpg')}}" alt="Gallery Image" class="w-100">
+                                        <a href="{{ asset('assets/images/mwalimuImage-no.8.jpg')}}" class="popup-image gal-btn"><i
                                                 class="fal fa-plus"></i></a>
                                     </div>
                                     <div class="gallery-thumb">
-                                        <img src="https://fakeimg.pl/600x400" alt="Gallery Image" class="w-100">
-                                        <a href="https://fakeimg.pl/600x400" class="popup-image gal-btn"><i
+                                        <img src="{{ asset('assets/images/mwalimuImage-no.7.jpg')}}" alt="Gallery Image" class="w-100">
+                                        <a href="{{ asset('assets/images/mwalimuImage-no.7.jpg')}}" class="popup-image gal-btn"><i
                                                 class="fal fa-plus"></i></a>
                                     </div>
                                     <div class="gallery-thumb">
-                                        <img src="https://fakeimg.pl/600x400" alt="Gallery Image" class="w-100">
-                                        <a href="https://fakeimg.pl/600x400" class="popup-image gal-btn"><i
+                                        <img src="{{ asset('assets/images/mwalimuImage-no.10.jpg')}}" alt="Gallery Image" class="w-100">
+                                        <a href="{{ asset('assets/images/mwalimuImage-no.10.jpg')}}" class="popup-image gal-btn"><i
                                                 class="fal fa-plus"></i></a>
                                     </div>
                                 </div>
