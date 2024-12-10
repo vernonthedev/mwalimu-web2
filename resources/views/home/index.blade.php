@@ -212,10 +212,10 @@
                 <div class="col-lg-6">
                     <div class="img-box1">
                         <div class="vs-circle"></div>
-                        <div class="img-1 mega-hover"><img src="https://fakeimg.pl/400x400" alt="about"></div>
-                        <div class="img-2 mega-hover"><img src="https://fakeimg.pl/400x400" alt="about"></div>
-                        <div class="img-3 mega-hover"><img src="https://fakeimg.pl/400x400" alt="about"></div>
-                        <div class="img-4 mega-hover"><img src="https://fakeimg.pl/400x400" alt="about"></div>
+                        <div class="img-1 mega-hover"><img src="{{ asset('assets/images/mwalimuImage-no.3.jpg')}}" alt="about"></div>
+                        <div class="img-2 mega-hover"><img src="{{ asset('assets/images/mwalimuImage-no.4.jpg')}}" alt="about"></div>
+                        <div class="img-3 mega-hover"><img src="{{ asset('assets/images/mwalimuImage-no.1.jpg')}}" alt="about"></div>
+                        <div class="img-4 mega-hover"><img src="{{ asset('assets/images/mwalimuImage-no.13.JPG')}}" alt="about"></div>
                     </div>
                 </div>
 
@@ -268,7 +268,7 @@
                 data-md-slide-show="2">
                 <div class="service-style1 col-xl-3">
                     <div class="service-body">
-                        <div class="service-img"><a href="#"><img src="https://fakeimg.pl/300x380"
+                        <div class="service-img"><a href="#"><img src="{{ asset('assets/images/mwalimuImage-no.22.jpg')}}"
                                     alt="service"></a></div>
                         <div class="service-content">
                             <div class="service-icon"><img src="assets/img/icon/sr-1-1.svg" alt="icon"></div>
@@ -283,7 +283,7 @@
                 </div>
                 <div class="service-style1 col-xl-3">
                     <div class="service-body">
-                        <div class="service-img"><a href="#"><img src="https://fakeimg.pl/300x380"
+                        <div class="service-img"><a href="#"><img src="{{ asset('assets/images/mwalimuImage-no.22.jpg')}}"
                                     alt="service"></a></div>
                         <div class="service-content">
                             <div class="service-icon"><img src="assets/img/icon/sr-1-2.svg" alt="icon"></div>
@@ -298,7 +298,7 @@
                 </div>
                 <div class="service-style1 col-xl-3">
                     <div class="service-body">
-                        <div class="service-img"><a href="#"><img src="https://fakeimg.pl/300x380"
+                        <div class="service-img"><a href="#"><img src="{{ asset('assets/images/mwalimuImage-no.22.jpg')}}"
                                     alt="service"></a></div>
                         <div class="service-content">
                             <div class="service-icon"><img src="assets/img/icon/sr-1-3.svg" alt="icon"></div>
@@ -313,7 +313,7 @@
                 </div>
                 <div class="service-style1 col-xl-3">
                     <div class="service-body">
-                        <div class="service-img"><a href="#"><img src="https://fakeimg.pl/300x380"
+                        <div class="service-img"><a href="#"><img src="{{ asset('assets/images/mwalimuImage-no.20.png')}}"
                                     alt="service"></a></div>
                         <div class="service-content">
                             <div class="service-icon"><img src="assets/img/icon/sr-1-4.svg" alt="icon"></div>
@@ -340,7 +340,7 @@
                 <div class="row align-items-center justify-content-between flex-row-reverse">
                     <div class="col-lg-6 text-center text-lg-end">
                         <div class="img-box2">
-                            <div class="transform-banner"><img src="https://fakeimg.pl/618x618" alt="about"></div>
+                            <div class="transform-banner"><img src="{{ asset('assets/images/mwalimuImage-no.1.jpg')}}" alt="about" width="100%"></div>
                             <div class="vs-circle jump"></div>
                         </div>
                     </div>
@@ -450,7 +450,7 @@
     <!--==============================
     Schedule Area
     ==============================-->
-    <section class=" space-extra" data-bg-src="https://fakeimg.pl/1200x600">
+    <section class=" space-extra" data-bg-src="{{ asset('assets/images/mwalimuImage-no.12.JPG')}}">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-11 col-lg-10 col-xxl-8">
@@ -501,7 +501,7 @@
             <div class="row gx-50 gy-gx">
                 <div class="col-md-6">
                     <div class="class-style1">
-                        <div class="class-img"><a href="#"><img src="https://fakeimg.pl/360x306"
+                        <div class="class-img"><a href="#"><img src="{{ asset('assets/images/mwalimuImage-no.4.jpg')}}"
                                     alt="class"></a></div>
                         <div class="class-content">
                             <h3 class="class-title"><a class="text-inherit" href="#">Interview Pricing</a></h3>
@@ -513,7 +513,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="class-style1">
-                        <div class="class-img"><a href="#"><img src="https://fakeimg.pl/360x306"
+                        <div class="class-img"><a href="#"><img src="{{ asset('assets/images/mwalimuImage-no.3.jpg')}}"
                                     alt="class"></a></div>
                          <div class="class-content">
                             <h3 class="class-title"><a class="text-inherit" href="#">Registration Pricing</a></h3>
@@ -537,7 +537,7 @@
                 <div class="col-lg-6 pb-3 pb-xl-0">
                     <div class="img-box3">
                         <div class="img-1 mega-hover">
-                            <img src="https://fakeimg.pl/592x709" alt="FAQ">
+                            <img src="{{ asset('assets/images/mwalimuImage-no.10.JPG')}}" alt="FAQ">
                             <a href="https://www.youtube.com/watch?v=OtXLgCGKE8Y&ab_channel=FLORENCENAMIREMBE"
                                 class="play-btn popup-video position-center"><i class="fas fa-play"></i></a>
                         </div>
@@ -554,25 +554,11 @@
                             <div class="accordion-header" id="headingOne1">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
-                                    First Little Readers Program
+                                    What Age Do Kids Start Mwalimu Junior School?
                                 </button>
                             </div>
                             <div id="collapseOne1" class="accordion-collapse collapse show"
                                 aria-labelledby="headingOne1" data-bs-parent="#faqVersion1">
-                                <div class="accordion-body">
-                                    <p>First Little Readers is our reading program designed to nurture early literacy skills in young learners. It provides age-appropriate books and engaging stories that help children develop foundational reading abilities, vocabulary, and comprehension. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <div class="accordion-header" id="headingTwo1">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
-                                    What Age Do Kids Start Mwalimu Junior School?
-                                </button>
-                            </div>
-                            <div id="collapseTwo1" class="accordion-collapse collapse" aria-labelledby="headingTwo1"
-                                data-bs-parent="#faqVersion1">
                                 <div class="accordion-body">
                                     <p>Children can begin their learning journey at Mwalimu Junior School as early as 3 years old in our pre-primary class (Baby Class).</p>
                                 </div>
@@ -652,7 +638,7 @@ Our classrooms and playgrounds are designed to encourage cooperative play and in
         <div class="container">
             <div class="row flex-row-reverse align-items-center gx-60">
                 <div class="col-lg-6 text-center text-lg-start mb-40 mb-lg-0">
-                    <img src="https://fakeimg.pl/615x481" alt="childrens" class="w-100 thumbnail" style="border-radius: 20px;">
+                    <img src="{{ asset('assets/images/mwalimuImage-no.5.JPG')}}" alt="childrens" class="w-100 thumbnail" style="border-radius: 20px;">
                 </div>
                 <div class="col-lg-6">
                     <div class="title-area text-center">
