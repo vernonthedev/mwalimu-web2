@@ -11,7 +11,7 @@
 
             <!-- Slide 1-->
             <div class="ls-slide" data-ls="duration:12000; transition2d:5; kenburnszoom:in; kenburnsscale:1.1;">
-                <img width="1920" height="770" src="https://fakeimg.pl/1200x600" class="ls-bg" alt="Mwalimu Junior School Images"
+                <img width="100%" src="assets/images/mwalimuImage-no.7.JPG" class="ls-bg" alt="Mwalimu Junior School"
                     decoding="async">
                 <ls-layer
                     style="font-size:36px; color:#000; stroke:#000; stroke-width:0px; text-align:left; font-style:normal; text-decoration:none; text-transform:none; font-weight:400; letter-spacing:0px; border-style:solid; background-position:0% 0%; background-repeat:no-repeat; background-clip:border-box; overflow:visible; width:255px; height:255px; border-width:60px 60px 60px 60px; border-color:#FFD600; border-radius:50% 50% 50% 50%; top:126px; left:740px; z-index:4; -webkit-background-clip:border-box;"
@@ -81,8 +81,8 @@
 
             <!-- Slide 2-->
             <div class="ls-slide" data-ls="duration:12000; transition2d:5; kenburnszoom:out; kenburnsscale:1.1;">
-                <img width="1920" height="770" src="https://fakeimg.pl/1200x600" class="ls-bg" alt="bg"
-                    decoding="async">
+                <img width="100%" src="assets/images/mwalimuImage-no.4.jpg" class="ls-bg" alt="Mwalimu Junior School"
+                decoding="async">
                 <h1 style="font-size:60px; stroke:#000; stroke-width:0px; text-align:center; font-style:normal; text-decoration:none; text-transform:none; font-weight:600; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; background-clip:border-box; overflow:visible; font-family:'Fredoka', sans-serif; line-height:60px; color:#ffffff; top:284px; left:312px; width:711px; -webkit-background-clip:border-box;"
                     class="ls-l ls-hide-tablet ls-hide-phone ls-text-layer"
                     data-ls="offsetxin:-100; delayin:200; easingin:easeOutQuint; offsetxout:-100; easingout:easeOutQuint;">
@@ -141,7 +141,7 @@
 
             <!-- Slide 3-->
             <div class="ls-slide" data-ls="duration:12000; transition2d:5; kenburnszoom:in; kenburnsscale:1.1;">
-                <img width="1920" height="770" src="https://fakeimg.pl/1200x600" class="ls-bg" alt="Mwalimu junior School"
+                <img width="100%" src="assets/images/mwalimuImage-no.6.JPG" class="ls-bg" alt="Mwalimu Junior School"
                     decoding="async">
                 <h1 style="font-size:60px; stroke:#000; stroke-width:0px; text-align:center; font-style:normal; text-decoration:none; text-transform:none; font-weight:600; letter-spacing:0px; background-position:0% 0%; background-repeat:no-repeat; background-clip:border-box; overflow:visible; font-family:'Fredoka', sans-serif; line-height:60px; color:#ffffff; top:284px; left:312px; width:711px; -webkit-background-clip:border-box;"
                     class="ls-l ls-hide-tablet ls-hide-phone ls-text-layer"
