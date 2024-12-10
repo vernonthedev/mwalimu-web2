@@ -30,7 +30,7 @@
                 <div class="col-sm-6">
                     <div class="team-style1 layout2">
                         <div class="team-img">
-                            <a href="#"><img src="https://fakeimg.pl/300x310?text=Mr." alt="team"></a>
+                            <a href="#"><img src="{{asset('assets/img/mwalimu.png')}}" alt="team"></a>
                         </div>
                         <div class="team-content">
                             <h3 class="team-name h2"><a href="#" class="text-inherit">Mr Amanyire Collins</a>
@@ -47,7 +47,7 @@
                 <div class="col-sm-6">
                     <div class="team-style1 layout2">
                         <div class="team-img">
-                            <a href="#"><img src="https://fakeimg.pl/300x310?text=Mr." alt="team"></a>
+                            <a href="#"><img src="{{asset('assets/img/mwalimu.png')}}" alt="team"></a>
                         </div>
                         <div class="team-content">
                             <h3 class="team-name h2"><a href="#" class="text-inherit">Mr Herbert Mugisha</a>
@@ -64,7 +64,7 @@
                 <div class="col-sm-6">
                     <div class="team-style1 layout2">
                         <div class="team-img">
-                            <a href="#"><img src="https://fakeimg.pl/300x310?text=Mrs." alt="team"></a>
+                            <a href="#"><img src="{{asset('assets/img/mwalimu.png')}}" alt="team"></a>
                         </div>
                         <div class="team-content">
                             <h3 class="team-name h2"><a href="#" class="text-inherit">Ms Florence Namirembe</a>

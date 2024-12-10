@@ -8,7 +8,7 @@
   <!--==============================
     Breadcumb
 ============================== -->
-<div class="breadcumb-wrapper " data-bg-src="https://fakeimg.pl/1200x600">
+<div class="breadcumb-wrapper " data-bg-src="{{asset('assets/images/mwalimuImage-no.12.JPG')}}">
         <div class="container z-index-common">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">School Events</h1>
