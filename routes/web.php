@@ -7,12 +7,18 @@ Auth::routes();
 
 // The home routes
 Route::get('/', 'HomeController@index')->name('home.index');    
+
 Route::get('about-us',function (){ return view('home.about');})->name('about');
+
 Route::get('contact-us',function (){ return view('home.contact');})->name('contact');
 Route::post('contact-us',[ContactController::class, 'store'])->name('contact.store');
+
 Route::get('events',[EventController::class, 'showEvents'])->name('events');
 Route::get('events/{id}', [EventController::class, 'show'])->name('events.show');
-Route::get('blog',function (){ return view('home.blog');})->name('blog');
+
+Route::get('blogs',[BlogController::class, 'showBlogs'])->name('blog');
+Route::get('/blogs/{blog}', [BlogController::class, 'show'])->name('blog.show');
+
 Route::get('board-members',function (){ return view('home.board');})->name('board');
 Route::get('nvuyekure-investments',function (){ return view('home.investment');})->name('investment');
 Route::get('/privacy-policy', 'HomeController@privacy_policy')->name('privacy_policy');

@@ -71,4 +71,17 @@ class BlogController extends Controller
 
         return redirect()->route('blog.index')->with('success', 'Blog deleted successfully!');
     }
+
+    public function showBlogs()
+    {
+        $blogs = Blog::paginate(20);
+        return view('home.blog', compact('blogs'));
+    }
+
+    //display a single blog and all its details
+    public function show(Blog $blog)
+{
+    return view('home.blogDetails', compact('blog'));
+}
+
 }

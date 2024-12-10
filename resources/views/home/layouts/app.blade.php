@@ -15,16 +15,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicons - Place mwalimu.png in the root directory -->
-    <link rel="shortcut icon" href="assets/img/mwalimu.png" type="image/x-icon">
-    <link rel="icon" href="assets/img/mwalimu.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('assets/img/mwalimu.png')}}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('assets/img/mwalimu.png')}}" type="image/x-icon">
 
     <!--==============================
 	  Google Fonts
 	============================== -->
-    <link rel="preconnect" href="fonts.googleapis.com/{{ route('home.index') }}">
-    <link rel="preconnect" href="fonts.gstatic.com/{{ route('home.index') }}" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link
-        href="fonts.googleapis.com/css24102.css?family=Fredoka:wght@400;500;600;700&amp;family=Jost:wght@400;500&amp;display=swap"
+        href="{{ asset('fonts.googleapis.com/css24102.css?family=Fredoka:wght@400;500;600;700&amp;family=Jost:wght@400;500&amp;display=swap')}}"
         rel="stylesheet">
 
 
@@ -32,18 +33,18 @@
 	    All CSS File
 	============================== -->
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <!-- <link rel="stylesheet" href="assets/css/app.min.css"> -->
     <!-- Fontawesome Icon -->
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.min.css') }}">
     <!-- Layerslider -->
-    <link rel="stylesheet" href="assets/css/layerslider.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/layerslider.min.css') }}">
     <!-- Magnific Popup -->
-    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.min.css') }}">
     <!-- Slick Slider -->
-    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/slick.min.css') }}">
     <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 
 </head>
 
@@ -68,7 +69,7 @@
         <div class="vs-menu-area text-center">
             <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
-                <a href="{{ route('home.index') }}"><img src="assets/img/mwalimu.png" alt="Mwalimu Junior School" width="20%"></a>
+                <a href="{{ route('home.index') }}"><img src="{{ asset('assets/img/mwalimu.png')}}" alt="Mwalimu Junior School" width="20%"></a>
             </div>
             <div class="vs-mobile-menu">
                 <ul>
@@ -114,9 +115,9 @@
                             </li>
                             <li><a href="{{ route('about')}}">Core Values</a>
                                 <ul>
-                                    <li><a href="{{ route('about')}}#vision">Vision</a></li>
-                                    <li><a href="{{ route('about')}}#mission">Mission</a></li>
+                                    <li><a href="{{ route('about')}}#vision">Vision & Mission</a></li>
                                     <li><a href="{{ route('about')}}#religion">Religious Foundation</a></li>
+                                    <li><a href="{{ route('about')}}#apply">Apply To Mwalimu</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -136,7 +137,7 @@
             <button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
             <div class="widget  ">
                 <div class="widget-about">
-                    <div class="footer-logo"><img src="assets/img/mwalimu.png" alt="Kiddino"></div>
+                    <div class="footer-logo"><img src="{{ asset('assets/img/mwalimu.png')}}" alt="Kiddino"></div>
                     <p class="mb-0">We are constantly expanding the range of services offered, taking care of children
                         of all ages.</p>
                 </div>
@@ -200,7 +201,7 @@
                         <div class="col-8 col-sm-auto">
                             <div class="header-logo">
                                 <a href="{{ route('home.index') }}">
-                                    <img src="assets/img/mwalimu.png" alt="logo" width="50%">
+                                    <img src="{{ asset('assets/img/mwalimu.png')}}" alt="Mwalimu Junior School" width="50%">
                                 </a>
                             </div>
                         </div>
@@ -250,9 +251,9 @@
                                             </li>
                                             <li><a href="{{ route('about')}}">Core Values</a>
                                                 <ul>
-                                                    <li><a href="{{ route('about')}}#vision">Vision</a></li>
-                                                    <li><a href="{{ route('about')}}#mission">Mission</a></li>
+                                                    <li><a href="{{ route('about')}}#vision">Vision & Mission</a></li>
                                                     <li><a href="{{ route('about')}}#religion">Religious Foundation</a></li>
+                                                    <li><a href="{{ route('about')}}#apply">Apply To Mwalimu</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -284,13 +285,13 @@
     <!--==============================
 			Footer Area
 	==============================-->
-    <footer class="footer-wrapper footer-layout1" data-bg-src="assets/img/bg/footer-bg-1-1.png">
+    <footer class="footer-wrapper footer-layout1" data-bg-src="{{ asset('assets/img/bg/footer-bg-1-1.png')}}">
         <div class="footer-top">
             <div class="container">
                 <div class="row gx-60 gy-4 text-center text-lg-start justify-content-between align-items-center">
-                    <div class="col-lg"><a href="{{ route('home.index') }}"><img src="assets/img/mwalimu-white.png" alt="Mwalimu Junior School Logo" width="50%"></a></div>
+                    <div class="col-lg"><a href="{{ route('home.index') }}"><img src="{{ asset('assets/img/mwalimu-white.png')}}" alt="Mwalimu Junior School Logo" width="50%"></a></div>
                     <div class="col-lg-auto">
-                        <h3 class="h4 mb-0 text-white"><img src="assets/img/icon/check-list.svg" alt="icon"
+                        <h3 class="h4 mb-0 text-white"><img src="{{ asset('assets/img/icon/check-list.svg')}}" alt="icon"
                                 class="me-2"> Enroll your child in a class now!</h3>
                     </div>
                     <div class="col-lg-auto"><a href="#" class="vs-btn">Start Registration</a></div>
@@ -304,7 +305,7 @@
                         <div class="widget footer-widget">
                             <div class="widget-about">
                                 <h3 class="mt-n2">Giving your child the best start in life</h3>
-                                <p class="map-link"><img src="assets/img/icon/map.svg" alt="svg">Mityana- Kunywa 4km off Mityana road. Next to the district head quarters</p>
+                                <p class="map-link"><img src="{{ asset('assets/img/icon/map.svg')}}" alt="svg">Mityana- Kunywa 4km off Mityana road. Next to the district head quarters</p>
                                 <div class="sidebar-gallery">
                                     <div class="gallery-thumb">
                                         <img src="https://fakeimg.pl/600x400" alt="Gallery Image" class="w-100">
@@ -388,25 +389,25 @@
         All Js File
     ============================== -->
     <!-- Jquery -->
-    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="{{ asset('assets/js/vendor/jquery-3.6.0.min.js') }}"></script>
     <!-- Slick Slider -->
-    <script src="assets/js/slick.min.js"></script>
-    <!-- <script src="assets/js/app.min.js"></script> -->
+    <script src="{{ asset('assets/js/slick.min.js') }}"></script>
+    <!-- <script src="assets/js/app.min.js') }}"></script> -->
     <!-- Layerslider -->
-    <script src="assets/js/layerslider.utils.js"></script>
-    <script src="assets/js/layerslider.transitions.js"></script>
-    <script src="assets/js/layerslider.kreaturamedia.jquery.js"></script>
+    <script src="{{ asset('assets/js/layerslider.utils.js') }}"></script>
+    <script src="{{ asset('assets/js/layerslider.transitions.js') }}"></script>
+    <script src="{{ asset('assets/js/layerslider.kreaturamedia.jquery.js') }}"></script>
     <!-- jquery ui -->
-    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="{{ asset('assets/js/jquery-ui.min.js') }}"></script>
     <!-- Bootstrap -->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
     <!-- Magnific Popup -->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
     <!-- Isotope Filter -->
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="{{ asset('assets/js/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{{ asset('assets/js/isotope.pkgd.min.js') }}"></script>
     <!-- Main Js File -->
-    <script src="assets/js/main.js"></script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
 
 
 </body>
